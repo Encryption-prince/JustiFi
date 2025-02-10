@@ -8,13 +8,13 @@ router.get('/admin',verifyToken,authorizeRoles("admin"), (req, res) => {
     res.send('Welcome Admin');
 });
 
-// only manager can access this route
-router.get('/manager',verifyToken,authorizeRoles("admin","manager"), (req, res) => {
-    res.send('Welcome Manager');
+// only lawyer can access this route
+router.get('/lawyer',verifyToken,authorizeRoles("admin","lawyer"), (req, res) => {
+    res.send('Welcome lawyer');
 });
 
 // all can access this route
-router.get('/user',verifyToken,authorizeRoles("admin","manager","user"), (req, res) => {
+router.get('/user',verifyToken,authorizeRoles("admin","lawyer","user"), (req, res) => {
     res.send('Welcome User');
 });
 
