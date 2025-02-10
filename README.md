@@ -3,9 +3,9 @@
 
 This project is a legal technology platform designed to enhance **efficiency**, **accessibility** and **transparency** within the judicial system. By integrating AI, cloud computing and secure authentication, we aim to bridge the gap between technology and law.
 
-### Live link of current progress : [Click here](https://justifi.onrender.com/)
+###  🔗Live link of current progress : [Click here](https://justifi.onrender.com/)
 
-### Youtube Video : [Click here](https://youtu.be/Hug2ANdSSLI) (Note: this is not a Project demo video)
+### ▶️Youtube Video : [Click here](https://youtu.be/Hug2ANdSSLI) (Note: this is not a Project demo video)
 
 ## 🛠 Tech Stack
 
