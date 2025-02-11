@@ -256,7 +256,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="block md:hidden shadow-sm border-b">
             <div class="relative flex flex-wrap content-start items-center bg-content-light">
     <div class="flex-1 flex md:justify-center justify-between bg-content-light z-10 py-3 sm:py-6 nav-container">
-        <a class="fill-current block relative z-10 max-w-[66vw]" href="./.html">
+        <a class="fill-current block relative z-10 max-w-[66vw]" style="display:none";    href="./.html">
                             <div class="flex flex-row">
                     <div :class="scrolled ? 'opacity-0' : 'opacity-100'" class="block transition duration-1000">
                         <img src="./resources/D-1.svg" data-src="https://D.law/wp-content/uploads/2023/11/D-1.svg" width="100%" height="100%" class="w-auto h-[31px] lazy" alt="D">
@@ -2646,44 +2646,74 @@ Have spent quite some time gathering information for my case and I was happy tha
                                     </div>
                 <div class="Footer__Right flex flex-col flex-1 justify-between pt-14 pb-8 md:pt-0 md:pb-0">
                     <div class="Footer__Right-links flex flex-col md:hidden flex-1 justify-between">
-                                                    <div x-data="{ isOpen: false }" class="flex flex-col body-base text-content-light">
-                                <div @click="isOpen = !isOpen" class="Footer__Right-column-outer flex flex-row w-full py-5 border-b justify-between" style="border-color:rgba(255, 255, 255, 0.1);">
-                                    <div class="Footer__Right-column-title cursor-pointer">Services</div>
-                                    <img data-src="/wp-content/themes/pegasus/build/global/img/icons/down-chevron.svg" class="w-4 transform ease-in-out duration-300 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                </div>
-                                <div x-show="isOpen" class="Footer__Right-column-links flex flex-col opacity-70 pt-8" :class="isOpen ? 'visible' : 'invisible'">
-                                                                            <a class="mb-4" href="./.html">Wrongful Termination</a>
-                                                                            <a class="mb-4" href="./.html">Pay and Overtime Issues</a>
-                                                                            <a class="mb-4" href="./.html">Discrimination &amp; Harassment</a>
-                                                                            <a class="mb-4" href="./.html">Workplace Retaliation</a>
-                                                                            <a class="mb-4" href="./.html">Leaves of Absence</a>
-                                                                            <a class="mb-4" href="./not-sure.html">Not Sure?</a>
-                                                                    </div>
+                        <div x-data="{ isOpen: false }" class="flex flex-col body-base text-content-light">
+                            <div @click="isOpen = !isOpen" class="Footer__Right-column-outer flex flex-row w-full py-5 border-b justify-between" style="border-color:rgba(255, 255, 255, 0.1);">
+                                <div class="Footer__Right-column-title cursor-pointer">Services</div>
+                                <img data-src="/wp-content/themes/pegasus/build/global/img/icons/down-chevron.svg" class="w-4 transform ease-in-out duration-300 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             </div>
-                                                    <div x-data="{ isOpen: false }" class="flex flex-col body-base text-content-light">
-                                <div @click="isOpen = !isOpen" class="Footer__Right-column-outer flex flex-row w-full py-5 border-b justify-between" style="border-color:rgba(255, 255, 255, 0.1);">
-                                    <div class="Footer__Right-column-title cursor-pointer">About</div>
-                                    <img data-src="/wp-content/themes/pegasus/build/global/img/icons/down-chevron.svg" class="w-4 transform ease-in-out duration-300 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                </div>
-                                <div x-show="isOpen" class="Footer__Right-column-links flex flex-col opacity-70 pt-8" :class="isOpen ? 'visible' : 'invisible'">
-                                                                            <a class="mb-4" href="./about-us.html">About Us</a>
-                                                                            <a class="mb-4" href="./.html">Careers</a>
-                                                                            <a class="mb-4" href="./as-seen-in-the-news.html">As Seen in the News</a>
-                                                                            <a class="mb-4" href="./blog-2.html">Blog</a>
-                                                                            <a class="mb-4" href="./.html">Areas We Service</a>
-                                                                    </div>
+                            <div x-show="isOpen" class="Footer__Right-column-links flex flex-col opacity-70 pt-8" :class="isOpen ? 'visible' : 'invisible'">
+                                <a class="mb-4 flex items-center" href="./.html">
+                                    <img src="/path-to-icons/termination.png" class="w-4 h-4 mr-2"> Wrongful Termination
+                                </a>
+                                <a class="mb-4 flex items-center" href="./.html">
+                                    <img src="/path-to-icons/pay.png" class="w-4 h-4 mr-2"> Pay and Overtime Issues
+                                </a>
+                                <a class="mb-4 flex items-center" href="./.html">
+                                    <img src="/path-to-icons/harassment.png" class="w-4 h-4 mr-2"> Discrimination & Harassment
+                                </a>
+                                <a class="mb-4 flex items-center" href="./.html">
+                                    <img src="/path-to-icons/retaliation.png" class="w-4 h-4 mr-2"> Workplace Retaliation
+                                </a>
+                                <a class="mb-4 flex items-center" href="./.html">
+                                    <img src="/path-to-icons/leaves.png" class="w-4 h-4 mr-2"> Leaves of Absence
+                                </a>
+                                <a class="mb-4 flex items-center" href="./not-sure.html">
+                                    <img src="/path-to-icons/question.png" class="w-4 h-4 mr-2"> Not Sure?
+                                </a>
                             </div>
-                                                    <div x-data="{ isOpen: false }" class="flex flex-col body-base text-content-light">
-                                <div @click="isOpen = !isOpen" class="Footer__Right-column-outer flex flex-row w-full py-5 border-b justify-between" style="border-color:rgba(255, 255, 255, 0.1);">
-                                    <div class="Footer__Right-column-title cursor-pointer">Company</div>
-                                    <img data-src="/wp-content/themes/pegasus/build/global/img/icons/down-chevron.svg" class="w-4 transform ease-in-out duration-300 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                </div>
-                                <div x-show="isOpen" class="Footer__Right-column-links flex flex-col opacity-70 pt-8" :class="isOpen ? 'visible' : 'invisible'">
-                                                                            <a class="mb-4" href="./privacy-policy.html">Privacy Policy</a>
-                                                                            <a class="mb-4" href="./.html">Disclaimer</a>
-                                                                    </div>
+                        </div>
+                    
+                        <div x-data="{ isOpen: false }" class="flex flex-col body-base text-content-light">
+                            <div @click="isOpen = !isOpen" class="Footer__Right-column-outer flex flex-row w-full py-5 border-b justify-between" style="border-color:rgba(255, 255, 255, 0.1);">
+                                <div class="Footer__Right-column-title cursor-pointer">About</div>
+                                <img data-src="/wp-content/themes/pegasus/build/global/img/icons/down-chevron.svg" class="w-4 transform ease-in-out duration-300 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             </div>
-                                            </div>
+                            <div x-show="isOpen" class="Footer__Right-column-links flex flex-col opacity-70 pt-8" :class="isOpen ? 'visible' : 'invisible'">
+                                <a class="mb-4 flex items-center" href="./about-us.html">
+                                    <img src="/path-to-icons/about.png" class="w-4 h-4 mr-2"> About Us
+                                </a>
+                                <a class="mb-4 flex items-center" href="./.html">
+                                    <img src="/path-to-icons/careers.png" class="w-4 h-4 mr-2"> Careers
+                                </a>
+                                <a class="mb-4 flex items-center" href="./as-seen-in-the-news.html">
+                                    <img src="/path-to-icons/news.png" class="w-4 h-4 mr-2"> As Seen in the News
+                                </a>
+                                <a class="mb-4 flex items-center" href="./blog-2.html">
+                                    <img src="/path-to-icons/blog.png" class="w-4 h-4 mr-2"> Blog
+                                </a>
+                                <a class="mb-4 flex items-center" href="./.html">
+                                    <img src="/path-to-icons/service-area.png" class="w-4 h-4 mr-2"> Areas We Service
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div x-data="{ isOpen: false }" class="flex flex-col body-base text-content-light">
+                            <div @click="isOpen = !isOpen" class="Footer__Right-column-outer flex flex-row w-full py-5 border-b justify-between" style="border-color:rgba(255, 255, 255, 0.1);">
+                                <div class="Footer__Right-column-title cursor-pointer">Company</div>
+                                <img data-src="/wp-content/themes/pegasus/build/global/img/icons/down-chevron.svg" class="w-4 transform ease-in-out duration-300 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                            </div>
+                            <div x-show="isOpen" class="Footer__Right-column-links flex flex-col opacity-70 pt-8" :class="isOpen ? 'visible' : 'invisible'">
+                                <a class="mb-4 flex items-center" href="./privacy-policy.html">
+                                    <img src="/path-to-icons/privacy.png" class="w-4 h-4 mr-2"> Privacy Policy
+                                </a>
+                                <a class="mb-4 flex items-center" href="./.html">
+                                    <img src="/path-to-icons/disclaimer.png" class="w-4 h-4 mr-2"> Disclaimer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                     <div class="Footer__Right-links hidden md:flex flex-row flex-1 justify-between">
                                                     <div class="flex flex-col body-base text-content-light">
                                 <div class="Footer__Right-column-title pb-4">Services</div>
@@ -2718,46 +2748,47 @@ Have spent quite some time gathering information for my case and I was happy tha
                                     <div class="Footer__Left-cta block md:hidden mt-8 p-6 bg-brand-greyscale07 rounded-lg">
                         <div class="sub-heading-four text-content-light">Get in touch today</div>
                         <div class="relative mt-[26px]">
-                            <a class="relative body-small text-content-light p-2.5 bg-brand-grapefruit rounded-2xl hover:bg-brand-grapefruit-dark transform ease-in-out duration-300" href="./contact-us.html">Contact Us</a>
+                            <a class="relative body-small text-content-light p-2.5 bg-brand-grapefruit rounded-2xl hover:bg-brand-grapefruit-dark transform ease-in-out duration-300" href="/">Contact Us</a>
                         </div>
                                                     <div class="Footer__social-links relative flex flex-row items-center mt-[49px]">
-                                <ul class="flex justify-start">
-                                                                            <li class="pr-6">
-                                            <a href="https://www.tiktok.com/@know.D.law" class="text-content-light" target="_blank" rel="noopener noreferrer">
-                                                <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px]">
-                                                    <img data-src="/wp-content/themes/pegasus/build/global/img/icons/tiktok.svg" class="w-4 h-4 text-content-greyscale02 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                                </div>
-                                            </a>
-                                        </li>
-                                                                            <li class="pr-6">
-                                            <a href="https://www.instagram.com/know.D.law/" class="text-content-light" target="_blank" rel="noopener noreferrer">
-                                                <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px]">
-                                                    <img data-src="/wp-content/themes/pegasus/build/global/img/icons/instagram.svg" class="w-4 h-4 text-content-greyscale02 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                                </div>
-                                            </a>
-                                        </li>
-                                                                            <li class="pr-6">
-                                            <a href="https://www.facebook.com/know.D.law" class="text-content-light" target="_blank" rel="noopener noreferrer">
-                                                <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px]">
-                                                    <img data-src="/wp-content/themes/pegasus/build/global/img/icons/facebook.svg" class="w-4 h-4 text-content-greyscale02 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                                </div>
-                                            </a>
-                                        </li>
-                                                                            <li class="pr-6">
-                                            <a href="https://www.linkedin.com/company/know-d-law/" class="text-content-light" target="_blank" rel="noopener noreferrer">
-                                                <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px]">
-                                                    <img data-src="/wp-content/themes/pegasus/build/global/img/icons/linkedin.svg" class="w-4 h-4 text-content-greyscale02 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                                </div>
-                                            </a>
-                                        </li>
-                                                                            <li class="pr-6">
-                                            <a href="https://www.youtube.com/@know-d-law" class="text-content-light" target="_blank" rel="noopener noreferrer">
-                                                <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px]">
-                                                    <img data-src="/wp-content/themes/pegasus/build/global/img/icons/youtube.svg" class="w-4 h-4 text-content-greyscale02 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                                </div>
-                                            </a>
-                                        </li>
-                                                                    </ul>
+                                                        <ul class="flex justify-start">
+                                                            <li class="pr-6">
+                                                                <a href="https://www.tiktok.com/@know.D.law" class="text-content-light" target="_blank" rel="noopener noreferrer">
+                                                                    <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px] flex items-center justify-center">
+                                                                        <img src="https://www.google.com/s2/favicons?domain=tiktok.com" alt="TikTok Favicon" class="w-4 h-4">
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="pr-6">
+                                                                <a href="https://www.instagram.com/know.D.law/" class="text-content-light" target="_blank" rel="noopener noreferrer">
+                                                                    <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px] flex items-center justify-center">
+                                                                        <img src="https://www.google.com/s2/favicons?domain=instagram.com" alt="Instagram Favicon" class="w-4 h-4">
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="pr-6">
+                                                                <a href="https://www.facebook.com/know.D.law" class="text-content-light" target="_blank" rel="noopener noreferrer">
+                                                                    <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px] flex items-center justify-center">
+                                                                        <img src="https://www.google.com/s2/favicons?domain=facebook.com" alt="Facebook Favicon" class="w-4 h-4">
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="pr-6">
+                                                                <a href="https://www.linkedin.com/company/know-d-law/" class="text-content-light" target="_blank" rel="noopener noreferrer">
+                                                                    <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px] flex items-center justify-center">
+                                                                        <img src="https://www.google.com/s2/favicons?domain=linkedin.com" alt="LinkedIn Favicon" class="w-4 h-4">
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="pr-6">
+                                                                <a href="https://www.youtube.com/@know-d-law" class="text-content-light" target="_blank" rel="noopener noreferrer">
+                                                                    <div class="bg-brand-greyscale02 rounded-full p-2 w-[30px] h-[30px] flex items-center justify-center">
+                                                                        <img src="https://www.google.com/s2/favicons?domain=youtube.com" alt="YouTube Favicon" class="w-4 h-4">
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        
                             </div>
                                             </div>
                             </div>
