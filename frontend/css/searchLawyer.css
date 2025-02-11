@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color: #6eb0ec;
+  --primary-color: #1728c7;
   --text-dark: #111827;
   --text-light: #6b7280;
   --white: #ffffff;
@@ -44,7 +44,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 2.7rem;
   font-weight: 700;
   color: var(--primary-color);
 }
@@ -235,3 +235,4 @@ nav {
     width: fit-content;
   }
 }
+
