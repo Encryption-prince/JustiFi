@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>LegalConnect Navbar</title>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white  p-4 flex justify-between items-center">
+        <!-- Logo -->
+        <h1 class="text-xl font-bold text-blue-600">LegalConnect</h1>
+        
+        <!-- Icons & Profile -->
+        <div class="flex space-x-4 items-center">
+            <button class="text-gray-600 hover:text-black">🔔</button>
+            <button class="text-gray-600 hover:text-black">💬</button>
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-8 h-8 rounded-full border">
+        </div>
+    </nav>
+
+    <!-- Lawyer Info Section -->
+    <div class="bg-white m-5 ml-20 mr-20 p-6  rounded-lg">
+        <div class="flex justify-between items-center relative">
+            <div class="flex items-center space-x-4">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" class="w-36 h-36 rounded-lg border">
+                <div>
+                    <h1 class="text-2xl font-bold">Sarah Anderson, J.D.</h1>
+                    <p class="text-gray-600">Corporate Law Specialist</p>
+                    <p class="text-gray-500"><span>📍</span> New York, NY • 15 years experience</p>
+                    <p class="text-yellow-500">⭐ 4.8 • 184 Reviews</p>
+                </div>
+            </div>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-md absolute top-2 right-0">Book Consultation</button>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 m-5 ml-20 mr-20 md:grid-cols-3 gap-6">
+    
+        <!-- Left Column: About, Practice Areas, Client Reviews -->
+        <div class="md:col-span-2 space-y-6">
+            
+            <!-- About Section -->
+            <div class="p-6 bg-white  rounded-lg">
+                <h2 class="text-xl font-semibold">About</h2>
+                <p class="text-gray-700 mt-2">
+                    Sarah Anderson is a distinguished corporate lawyer with over 15 years of experience in handling 
+                    complex business transactions and corporate governance matters. She has successfully represented 
+                    Fortune 500 companies and startups alike, providing strategic legal counsel in mergers & acquisitions, 
+                    securities regulation, and corporate compliance.
+                </p>
+            </div>
+    
+            <!-- Practice Areas -->
+            <div class="p-6 bg-white  rounded-lg">
+                <h2 class="text-xl font-semibold">Practice Areas</h2>
+                <div class="grid grid-cols-2 gap-4 mt-3">
+                    <div class="p-3 bg-blue-100 rounded-md flex items-center space-x-2">
+                        📜 <span>Corporate Law</span>
+                    </div>
+                    <div class="p-3 bg-blue-100 rounded-md flex items-center space-x-2">
+                        📑 <span>Mergers & Acquisitions</span>
+                    </div>
+                    <div class="p-3 bg-blue-100 rounded-md flex items-center space-x-2">
+                        ⚖️ <span>Securities Law</span>
+                    </div>
+                    <div class="p-3 bg-blue-100 rounded-md flex items-center space-x-2">
+                        📖 <span>Contract Law</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Client Reviews -->
+            <div class="p-6 bg-white  rounded-lg">
+                <h2 class="text-xl font-semibold">Client Reviews</h2>
+                <div class="flex items-center space-x-4 mt-3">
+                    <img src="https://randomuser.me/api/portraits/men/36.jpg" class="w-12 h-12 rounded-full">
+                    <div>
+                        <p class="font-semibold">Michael Chen</p>
+                        <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
+                        <p class="text-gray-700">
+                            Exceptional service! Sarah helped our startup navigate complex regulatory 
+                            requirements with expertise and precision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <!-- Right Column: Contact Information, Similar Lawyers -->
+        <div class="space-y-6">
+            
+            <!-- Contact Information -->
+            <div class="p-6 bg-white  rounded-lg">
+                <h2 class="text-xl font-semibold">Contact Information</h2>
+                <p>📞 (212) 555-0123</p>
+                <p>✉️ sarah.anderson@legalconnect.com</p>
+                <p>📍 350 Fifth Avenue, New York, NY 10118</p>
+            </div>
+    
+            <!-- Similar Lawyers -->
+            <div class="p-6 bg-white  rounded-lg">
+                <h2 class="text-xl font-semibold">Similar Lawyers</h2>
+                <div class="mt-3">
+                    <div class="flex items-center space-x-4 p-3 bg-gray-50 rounded-md">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-semibold">David Miller</p>
+                            <p class="text-gray-600 text-sm">Corporate Law</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 p-3 bg-gray-50 rounded-md mt-3">
+                        <img src="https://randomuser.me/api/portraits/women/29.jpg" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-semibold">Jennifer Lee</p>
+                            <p class="text-gray-600 text-sm">Business Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+    
+   
+    
+
+
+</body>
+</html>
