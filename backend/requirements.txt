@@ -1,6 +1,0 @@
-express
-dotenv
-mongoose
-bcryptjs
-jsonwebtoken
-cors

@@ -1,6 +1,6 @@
 # 🏛️JustiFi⚖️
  ## 📌 About the Project
-
+uuuuuu
 This project is a legal technology platform designed to enhance **efficiency**, **accessibility** and **transparency** within the judicial system. By integrating AI, cloud computing and secure authentication, we aim to bridge the gap between technology and law.
 
 ###  🔗Live link of current progress : [Click here](https://justifi.onrender.com/) (hosted on render, hence might take some time to open)
