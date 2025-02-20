@@ -14,16 +14,14 @@
                 <span class="text-blue-600">⚖ Justifi</span>
             </h2>
             <nav class="space-y-2">
-                <a href="#" class="flex items-center px-4 py-2 text-blue-600 font-semibold bg-blue-100 rounded">
-                    Dashboard
-                </a>
-                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded">My Cases</a>
-                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded">Find a Lawyer</a>
-                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded">AI Legal Assistance</a>
-                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded">Crowdfunding</a>
-                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded">Court Updates</a>
-                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded">Legal Resources</a>
-                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded">Settings</a>
+                <a href="./user_login.html" class="nav-link flex items-center px-4 py-2 rounded">Dashboard</a>
+                <a href="./mycases.html" class="nav-link flex items-center px-4 py-2 rounded">My Cases</a>
+                <a href="./find_lawyer.html" class="nav-link flex items-center px-4 py-2 rounded">Find a Lawyer</a>
+                <a href="./ai_assist.html" class="nav-link flex items-center px-4 py-2 rounded">AI Legal Assistance</a>
+                <a href="./crowdfunding.html" class="nav-link flex items-center px-4 py-2 rounded">Crowdfunding</a>
+                <a href="./court_updates.html" class="nav-link flex items-center px-4 py-2 rounded">Court Updates</a>
+                <a href="./legal_resources.html" class="nav-link flex items-center px-4 py-2 rounded">Legal Resources</a>
+                <a href="./settings.html" class="nav-link flex items-center px-4 py-2 rounded">Settings</a>
             </nav>
         </aside>
     <main class="flex-1">
@@ -142,5 +140,24 @@
         </footer>
     </main>
     </div>
+    <script>
+        // Get the current page filename
+        const currentPage = window.location.pathname.split("/").pop();
+    
+        // Select all navigation links
+        const navLinks = document.querySelectorAll(".nav-link");
+    
+        navLinks.forEach(link => {
+            // Get href without "./"
+            const linkHref = link.getAttribute("href").replace("./", "");
+    
+            // If the href matches the current page, add active styles
+            if (linkHref === currentPage) {
+                link.classList.add("bg-blue-200", "text-blue-600", "font-semibold");
+            } else {
+                link.classList.add("text-gray-700", "hover:bg-gray-200");
+            }
+        });
+    </script>
 </body>
 </html>
