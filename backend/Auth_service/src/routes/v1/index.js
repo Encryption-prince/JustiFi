@@ -39,6 +39,8 @@ router.get(
     LawyerController.isAuthenticated
 )
 
+router.get('/lawyer',LawyerController.getAll);
+
 router.post('/case',CaseController.create);
 router.delete('/case/:id',CaseController.destroy);
 router.get('/case/:id',CaseController.get);
