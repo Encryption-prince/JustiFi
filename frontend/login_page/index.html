@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex justify-center items-center h-screen bg-orange-600">
+    <div class="bg-orange-500 p-8 rounded-2xl shadow-lg w-96 text-center text-white">
+        <h2 class="text-2xl font-bold mb-6">Login to Your Account</h2>
+
+        <!-- Input Fields -->
+        <div class="mb-4 text-left">
+            <label for="email" class="text-sm font-medium">Email</label>
+            <input type="email" id="email" class="input-field" placeholder="Enter your email">
+        </div>
+
+        <div class="mb-6 text-left">
+            <label for="password" class="text-sm font-medium">Password</label>
+            <input type="password" id="password" class="input-field" placeholder="Enter your password">
+        </div>
+
+        <!-- Signup Button -->
+        <button id="signup-btn" class="w-full bg-orange-700 py-2 rounded-md text-white font-semibold hover:bg-orange-800 transition">
+            Sign Up
+        </button>
+
+        <div class="my-4 text-sm text-white/80">OR CONTINUE WITH</div>
+
+        <!-- Google Sign-in -->
+        <button id="google-login" class="w-full flex items-center justify-center bg-white text-gray-700 py-2 rounded-md font-semibold hover:bg-gray-200 transition">
+            <img src="https://img.icons8.com/color/20/000000/google-logo.png" class="mr-2"/> Continue with Google
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
