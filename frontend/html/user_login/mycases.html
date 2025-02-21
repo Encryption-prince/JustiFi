@@ -11,7 +11,7 @@
 <body class="bg-gray-100">
     <div class="flex">
         <!-- Sidebar -->
-        <aside class="w-64 bg-white shadow-md h-screen p-4 ">
+        <aside class="w-64 bg-white shadow-md h-screen p-4 sticky top-0 overflow-y-auto">
             <h2 class="text-lg font-bold flex items-center mb-6">
                 <span class="text-blue-600">⚖ Justifi</span>
             </h2>
@@ -140,6 +140,125 @@
                 </div>
                 
         
+            </div>
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-3xl font-bold mb-6">Top Cases Around the World</h1>
+        
+                <!-- Filter & Sort Buttons -->
+                <div class="flex justify-end space-x-4 mb-6">
+                    <button class="bg-gray-200 px-5 py-2 rounded-lg hover:bg-gray-300 flex items-center">
+                        <i class="fas fa-filter mr-2"></i> Filter
+                    </button>
+                    <button class="bg-gray-200 px-5 py-2 rounded-lg hover:bg-gray-300 flex items-center">
+                        <i class="fas fa-sort mr-2"></i> Sort
+                    </button>
+                </div>
+        
+                <!-- Cases Grid -->
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Case Card Template -->
+                    <div class="bg-white p-6 rounded-lg shadow-md relative space-y-4">
+                        <div class="flex justify-between items-center">
+                            <h2 class="font-semibold text-xl">Meta Privacy Violation <br>Case</h2>
+                            <span class="bg-green-200 text-green-700 px-3 py-1 rounded-full text-sm">Active</span>
+                        </div>
+                        <p class="text-gray-500 text-sm"><i class="fas fa-hashtag"></i> Case #2025-CV-789456</p>
+                        <p class="text-gray-500 text-sm"><i class="far fa-calendar-alt"></i> Filed: Jan 15, 2025 | Updated: Mar 20, 2025</p>
+                        <p class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt"></i> US Federal Court, California</p>
+                        <p class="text-sm leading-relaxed text-gray-700">
+                            Major data privacy lawsuit challenging Meta’s data collection practices across EU and US jurisdictions.
+                        </p>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600 font-medium">Case Progress</p>
+                            <div class="relative bg-gray-200 h-3 rounded-full w-full mt-1">
+                                <div class="bg-blue-500 h-3 rounded-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm font-semibold">Latest Updates</p>
+                            <ul class="text-blue-600 text-sm space-y-1">
+                                <li>📄 <a href="#">Court Hearing Summary</a></li>
+                                <li>📄 <a href="#">Official Court Statement</a></li>
+                            </ul>
+                        </div>
+                        <!-- Save & Share Icons -->
+                        <div class="absolute bottom-4 right-4 flex space-x-3 text-gray-500">
+                            <i class="far fa-bookmark cursor-pointer hover:text-gray-700"></i>
+                            <i class="fas fa-share-alt cursor-pointer hover:text-gray-700"></i>
+                        </div>
+                    </div>
+        
+                    <!-- Case 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md relative space-y-4">
+                        <div class="flex justify-between items-center">
+                            <h2 class="font-semibold text-xl">Climate Action Lawsuit</h2>
+                            <span class="bg-yellow-200 text-yellow-700 px-3 py-1 rounded-full text-sm">Pending</span>
+                        </div>
+                        <p class="text-gray-500 text-sm"><i class="fas fa-hashtag"></i> Case #2025-ENV-123456</p>
+                        <p class="text-gray-500 text-sm"><i class="far fa-calendar-alt"></i> Filed: Feb 10, 2025 | Updated: Mar 15, 2025</p>
+                        <p class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt"></i> International Court of Justice</p>
+                        <p class="text-sm leading-relaxed text-gray-700">
+                            International climate change litigation against major corporations for environmental damage.
+                        </p>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600 font-medium">Case Progress</p>
+                            <div class="relative bg-gray-200 h-3 rounded-full w-full mt-1">
+                                <div class="bg-blue-500 h-3 rounded-full" style="width: 45%;"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm font-semibold">Latest Updates</p>
+                            <ul class="text-blue-600 text-sm space-y-1">
+                                <li>📄 <a href="#">Preliminary Hearing Results</a></li>
+                                <li>📄 <a href="#">Expert Testimony Summary</a></li>
+                            </ul>
+                        </div>
+                        <div class="absolute bottom-4 right-4 flex space-x-3 text-gray-500">
+                            <i class="far fa-bookmark cursor-pointer hover:text-gray-700"></i>
+                            <i class="fas fa-share-alt cursor-pointer hover:text-gray-700"></i>
+                        </div>
+                    </div>
+        
+                    <!-- Case 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md relative space-y-4">
+                        <div class="flex justify-between items-center">
+                            <h2 class="font-semibold text-xl">Antitrust Tech Case</h2>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Resolved</span>
+                        </div>
+                        <p class="text-gray-500 text-sm"><i class="fas fa-hashtag"></i> Case #2024-AT-456789</p>
+                        <p class="text-gray-500 text-sm"><i class="far fa-calendar-alt"></i> Filed: Sep 5, 2024 | Resolved: Mar 1, 2025</p>
+                        <p class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt"></i> European Court of Justice</p>
+                        <p class="text-sm leading-relaxed text-gray-700">
+                            Landmark antitrust case regarding tech monopoly practices in European markets.
+                        </p>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600 font-medium">Case Progress</p>
+                            <div class="relative bg-gray-200 h-3 rounded-full w-full mt-1">
+                                <div class="bg-blue-500 h-3 rounded-full" style="width: 100%;"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm font-semibold">Latest Updates</p>
+                            <ul class="text-blue-600 text-sm">
+                                <li>📄 <a href="#">Final Verdict Summary</a></li>
+                                <li>📄 <a href="#">Case Impact Analysis</a></li>
+                            </ul>
+                        </div>
+                        <!-- Save & Share Icons -->
+                        <div class="absolute bottom-4 right-4 space-x-3 text-gray-500">
+                            <i class="far fa-bookmark cursor-pointer hover:text-gray-700"></i>
+                            <i class="fas fa-share-alt cursor-pointer hover:text-gray-700"></i>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Load More Button -->
+                <div class="mt-8 text-center">
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">Load More Cases</button>
+                </div>
             </div>
         </main>
     </div>
