@@ -23,9 +23,9 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    width: 1000px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 650px;
 }
 
 .container p {
@@ -76,6 +76,17 @@ body {
 }
 
 .container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+select {
     background-color: #eee;
     border: none;
     margin: 8px 0;

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Signup</title>
+    <link rel="stylesheet" href="/frontend/css/userlogin.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../frontend/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../frontend/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../frontend/images/favicon-16x16.png">
+    <link rel="manifest" href="../frontend/images/site.webmanifest">
+    <script src="https://kit.fontawesome.com/a6f061081d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="signupForm">
+                <h1>Create Account</h1>
+                <span>or use your email for registration</span>
+                <input type="email" id="signupEmail" placeholder="Email">
+                <input type="password" id="signupPassword" placeholder="Password">
+                <input type="text" id="firstName" placeholder="First Name">
+                <input type="text" id="lastName" placeholder="Last Name">
+                <input type="number" id="licenseNo" placeholder="License No">
+                <input type="text" id="barAssociation" placeholder="Bar Association">
+                <select id="specialization">
+                    <option value="">Select Specialization</option>
+                    <option value="Criminal Law">Criminal Law – Defense or prosecution in criminal cases</option>
+                    <option value="Civil Litigation">Civil Litigation – Handling lawsuits and disputes between parties</option>
+                    <option value="Corporate Law">Corporate Law – Advising businesses on legal matters</option>
+                    <option value="Intellectual Property Law">Intellectual Property (IP) Law – Patents, trademarks, copyrights</option>
+                    <option value="Family Law">Family Law – Divorce, child custody, adoption</option>
+                    <option value="Real Estate Law">Real Estate Law – Property transactions, disputes</option>
+                    <option value="Tax Law">Tax Law – Tax regulations and disputes with tax authorities</option>
+                    <option value="Employment & Labor Law">Employment & Labor Law – Workplace disputes, employee rights</option>
+                    <option value="Bankruptcy Law">Bankruptcy Law – Debt restructuring, insolvency cases</option>
+                    <option value="Personal Injury Law">Personal Injury Law – Accidents, medical malpractice claims</option>
+                    <option value="Immigration Law">Immigration Law – Visas, citizenship, deportation cases</option>
+                    <option value="Environmental Law">Environmental Law – Compliance with environmental regulations</option>
+                    <option value="Cyber Law">Cyber Law – Internet crimes, data privacy, online disputes</option>
+                    <option value="Human Rights Law">Human Rights Law – Advocacy for fundamental rights and freedoms</option>
+                    <option value="Entertainment Law">Entertainment Law – Legal matters in media, film, music industries</option>
+                    <option value="Sports Law">Sports Law – Contracts, disputes, and rights of athletes</option>
+                    <option value="Medical & Health Law">Medical & Health Law – Compliance in healthcare, medical negligence</option>
+                    <option value="Constitutional Law">Constitutional Law – Interpretation of constitutional rights and laws</option>
+                </select>
+                <input type="number" id="experience" placeholder="Years of Experience">
+                <input type="tel" id="phoneNo" placeholder="Phone no">
+                <input type="text" id="address" placeholder="Address">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="loginForm">
+                <h1>Log In</h1>
+                <div class="social-icons" id="googleLoginBtn" onclick="loginWithGoogle()">
+                    <a class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+                <span>or use your username and password</span>
+                <input type="text" id="loginUsername" placeholder="Email">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <a href="#">→ Forget Your Password? ←</a>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Already have an Account!</h1>
+                    <p>Continue using Login</p>
+                    <button class="hidden" id="login">Log In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>New Lawyer!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/frontend/Js/userlogin.js"></script>
+    
+</body>
+</html>
