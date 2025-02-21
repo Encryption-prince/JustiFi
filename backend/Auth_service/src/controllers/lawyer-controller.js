@@ -79,8 +79,29 @@ const isAuthenticated = async (req, res) => {
     }
 }
 
+const getAll = async (req,res)=>{
+    try {
+        const response = await lawyerService.getAllLawyers(req.query);
+        return res.status(200).json({
+            data:response,
+            success:true,
+            err: {},
+            message:'Successfully fetched the lawyers'
+        });
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({
+            data:{},
+            success:false,
+            message:'Not able get lawyers',
+            err: error
+        });
+    }
+}
+
 module.exports = {
     create,
     signIn,
-    isAuthenticated
+    isAuthenticated,
+    getAll
 }

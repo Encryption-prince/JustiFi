@@ -84,6 +84,17 @@ class LawyerService {
             throw error;
         }
     }
+
+    async getAllLawyers(data){
+        try {
+            const lawyers = await this.lawyerRepository.getAllLawyers(data);
+            return lawyers;
+        } catch (error) {
+            console.log("something went wrong at service layer");
+            throw {error};
+        }
+    }
+
 }
 
 module.exports = LawyerService;
