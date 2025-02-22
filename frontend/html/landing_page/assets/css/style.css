@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
     --transform-fix: 'none'
 }
@@ -7,9 +8,11 @@
     0% {
         background-position: left bottom
     }
+
     50% {
         background-position: right top
     }
+
     100% {
         background-position: left bottom
     }
@@ -19,9 +22,11 @@
     0% {
         background-position: left bottom
     }
+
     50% {
         background-position: right top
     }
+
     100% {
         background-position: left bottom
     }
@@ -170,9 +175,11 @@ ul {
         display: flex;
         margin: 0 auto
     }
+
     .button__wrapper {
         width: 100%
     }
+
     .button__wrapper .button:nth-child(n+2) {
         margin: 1rem auto 0 auto
     }
@@ -393,13 +400,16 @@ ul {
     .comment_form {
         display: block
     }
+
     .comment_form>div {
         display: block;
         width: 100%
     }
+
     .comment_form>div:last-child {
         margin-left: 0
     }
+
     .comment_form textarea.input-field {
         margin-top: 1rem
     }
@@ -505,12 +515,14 @@ ul {
         -ms-flex-align: center;
         align-items: center
     }
+
     .blog_hero ul {
         display: block;
         bottom: initial;
         margin: 2rem auto;
         text-align: center
     }
+
     .blog_hero h1 {
         text-align: center
     }
@@ -702,25 +714,32 @@ ul {
     .blog {
         padding: 5rem 0
     }
+
     .blog__header .dropdown-wrapper {
         width: 100%
     }
+
     .blog__header .date__dropdown {
         margin-top: 2rem
     }
+
     .blog__header .search {
         margin-top: 2rem;
         width: 100%
     }
+
     .blog__header .search input {
         width: 100%
     }
+
     .blog__content .row>div:nth-child(n+3) {
         margin-top: initial
     }
+
     .blog__content .row>div {
         margin-top: 3rem !important
     }
+
     .blog .col-lg-8 .blog__single-info {
         bottom: 1rem;
         right: initial;
@@ -728,12 +747,14 @@ ul {
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%)
     }
+
     .blog .col-lg-8.left .blog__single-info {
         right: initial;
         left: 50%;
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%)
     }
+
     .blog__single-info {
         width: calc(100% - 2rem)
     }
@@ -1279,12 +1300,15 @@ ul {
         width: calc(100% - 20rem);
         margin: 0 auto
     }
+
     .blog_single__content .social {
         left: 0
     }
+
     .blog_single__comment {
         width: calc(100% - 20rem)
     }
+
     .blog_single .comment_form__wrapper {
         width: calc(100% - 20rem)
     }
@@ -1294,42 +1318,52 @@ ul {
     .blog_single__content {
         padding-bottom: 5rem
     }
+
     .blog_single__content>*:not(.grid) {
         width: 100%;
         margin: 0
     }
+
     .blog_single__content h1 {
         font-size: 4.5rem;
         letter-spacing: -.2rem
     }
+
     .blog_single__content .social {
         position: static;
         top: initial;
         left: initial;
         margin-top: 5rem
     }
+
     .blog_single__content .social ul li {
         display: inline-block
     }
+
     .blog_single__content .social ul li:not(:first-child) {
         margin-left: 1rem;
         margin-top: 0
     }
+
     .blog_single__content img.grid-item {
         -o-object-fit: cover;
         object-fit: cover;
         width: 30%;
         height: 30rem
     }
+
     .blog_single__content img.grid-item--width2 {
         width: 30%
     }
+
     .blog_single__content .paragraph.grid-item {
         width: 100%
     }
+
     .blog_single__comment {
         width: 100%
     }
+
     .blog_single .comment_form__wrapper {
         width: 100%
     }
@@ -1347,28 +1381,35 @@ ul {
     .blog_single__content {
         padding: 0 2rem 13rem 2rem
     }
+
     .blog_single__content .paragraph {
         font-size: 1.6rem;
         line-height: 3rem
     }
+
     .blog_single .blog_related__wrapper {
         padding: 5rem 3rem
     }
+
     .blog_single .blog_related__header {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column
     }
+
     .blog_single .blog_related__header .related-post-nav {
         margin-top: 2rem
     }
+
     .blog_single__comment {
         padding: 5rem 3rem
     }
+
     .blog_single__comment--single.reply {
         width: 100%
     }
+
     .blog_single .comment_form__wrapper {
         padding: 0 3rem
     }
@@ -1467,6 +1508,7 @@ body.loaded .preloader {
     .header__nav-primary>li>a {
         position: relative
     }
+
     .header__nav-primary>li>a::before {
         content: "";
         display: block;
@@ -1481,6 +1523,7 @@ body.loaded .preloader {
         -webkit-transition: all .25s ease;
         transition: all .25s ease
     }
+
     .header__nav-primary>li>a:hover::before {
         width: calc(100% - 2rem)
     }
@@ -1575,6 +1618,7 @@ body.loaded .preloader {
     .header__nav {
         margin-left: 0
     }
+
     .header__nav li a {
         padding: 0 2rem/2
     }
@@ -1626,9 +1670,11 @@ body.loaded .preloader {
     .header .container {
         padding: 0 2rem
     }
+
     .header__nav-primary li:first-child {
         margin-right: 2rem
     }
+
     .header__nav-primary li:nth-child(n+3) {
         margin-left: 1.5rem
     }
@@ -1653,6 +1699,7 @@ body.loaded .preloader {
         justify-content: space-between;
         padding: 0 5rem
     }
+
     .header__nav {
         width: 100vw;
         height: 130vh;
@@ -1667,17 +1714,20 @@ body.loaded .preloader {
         transition: all .25s ease;
         padding-top: 15%
     }
+
     .header__nav ul {
         display: block;
         width: 100%;
         margin-top: 5rem
     }
+
     .header__nav li {
         display: block;
         width: 100%;
         -webkit-transition: all .25s ease;
         transition: all .25s ease
     }
+
     .header__nav li a {
         font-size: 2rem;
         padding: 2.1rem 4.4rem;
@@ -1687,46 +1737,59 @@ body.loaded .preloader {
         transition: all .25s ease;
         color: white
     }
+
     .header__nav li i {
         color: white
     }
+
     .header__nav li:nth-child(n+2) {
         margin-left: 0
     }
+
     .header__nav li:hover {
         background-color: white
     }
+
     .header__nav li:hover a,
     .header__nav li:hover i {
         color: #9341d4
     }
+
     .header__nav .nav__dropdown-info {
         padding-left: 4.4rem
     }
+
     .header__nav .nav__dropdown-box {
         position: absolute;
         width: 100%;
         border-radius: initial;
         border: 0
     }
+
     .header__nav .nav__dropdown-box::before {
         display: none
     }
+
     .header__nav .nav__dropdown-box li a {
         font-size: 1.8rem
     }
+
     .header__nav .nav__dropdown-box.shown {
         top: 2rem
     }
+
     .header__nav span {
         display: block
     }
+
     .header__nav-primary {
         margin-left: 0
     }
+
     .header__nav .social {
         display: none
     }
+
     .header__bars {
         display: block
     }
@@ -1839,28 +1902,34 @@ body.loaded .preloader {
     .hero__wrapper {
         padding: 18.4rem 1rem 9.9rem 1rem
     }
+
     .hero .main-heading {
         font-size: 6rem
     }
+
     .hero .paragraph {
         font-size: 2rem;
         line-height: 3.6rem
     }
+
     .hero .hero-img {
         -webkit-transform: scale(0.9);
         transform: scale(0.9)
     }
+
     .hero .hero-img::before {
         -webkit-transform: scale(0.7) translateX(-50%);
         transform: scale(0.7) translateX(-50%);
         top: 0;
         left: 30%
     }
+
     .hero .download-buttons {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex
     }
+
     .hero .download-buttons a:last-child {
         margin-left: .5rem
     }
@@ -1870,26 +1939,31 @@ body.loaded .preloader {
     .hero__wrapper {
         width: calc(100% - 5rem)
     }
+
     .hero .main-heading {
         font-size: 5.5rem;
         text-align: center;
         margin-top: 3rem
     }
+
     .hero .paragraph {
         font-size: 2rem;
         line-height: 3.6rem;
         text-align: center
     }
+
     .hero .download-buttons {
         width: -webkit-max-content;
         width: -moz-max-content;
         width: max-content;
         margin: 0 auto
     }
+
     .hero .hero-img {
         width: 100%;
         margin-top: 5rem
     }
+
     .hero .hero-img::before {
         -webkit-transform: scale(0.8) translate(-50%, 0);
         transform: scale(0.8) translate(-50%, 0);
@@ -1902,22 +1976,27 @@ body.loaded .preloader {
     .hero .main-heading {
         font-size: 5rem
     }
+
     .hero .paragraph {
         font-size: 1.8rem;
         line-height: 3.4rem
     }
+
     .hero .download-buttons a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex
     }
+
     .hero .download-buttons a:last-child {
         margin-left: 0rem;
         margin-top: 1rem
     }
+
     .hero .hero-img {
         width: 100%
     }
+
     .hero .hero-img::before {
         -webkit-transform: scale(0.6) translate(-50%, 0);
         transform: scale(0.6) translate(-50%, 0);
@@ -1930,18 +2009,22 @@ body.loaded .preloader {
     .hero .col-lg-6 {
         height: auto
     }
+
     .hero__wrapper {
         padding: 10rem 0
     }
+
     .hero .hero-img {
         width: 100% !important
     }
+
     .hero .hero-img img {
         width: 50% !important;
         height: 50% !important;
         -o-object-fit: cover !important;
         object-fit: cover !important
     }
+
     .hero .hero-img::before {
         -webkit-transform: scale(1) translate(-50%, 0) !important;
         transform: scale(1) translate(-50%, 0) !important;
@@ -2316,6 +2399,7 @@ body.loaded .preloader {
         -webkit-transform: translateX(-50%) scale(0.7);
         transform: translateX(-50%) scale(0.7)
     }
+
     .video__background .phone {
         width: 100%
     }
@@ -2327,13 +2411,16 @@ body.loaded .preloader {
         transform: translateX(-50%) scale(0.6);
         top: 3rem
     }
+
     .video__background .phone {
         width: 100%
     }
+
     .video__play>button {
         width: 12.1rem;
         height: 12.1rem
     }
+
     .video__play>button i {
         font-size: 5rem
     }
@@ -2440,11 +2527,13 @@ body.loaded .preloader {
         -ms-flex-order: 2;
         order: 2
     }
+
     .growth .row>div:nth-child(even) .growth__box .content {
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1
     }
+
     .growth .row>div:nth-child(even) .growth__box .content::after {
         content: "";
         width: 4.8rem;
@@ -2500,12 +2589,15 @@ body.loaded .preloader {
     .growth__wrapper {
         padding: 5rem 2rem
     }
+
     .growth__box .content {
         width: 75%
     }
+
     .growth .row>div:nth-child(n+1) {
         margin-top: 5rem
     }
+
     .growth .row>div:nth-child(even) .growth__box .content::before {
         content: "";
         width: 4.8rem;
@@ -2526,20 +2618,24 @@ body.loaded .preloader {
         width: calc(100% - 5rem);
         padding: 5rem 2rem
     }
+
     .growth__box {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column
     }
+
     .growth__box .content {
         width: 100%;
         margin-top: 5rem;
         text-align: center
     }
+
     .growth__box .content h3 {
         width: 100%
     }
+
     .growth__box .content::before {
         content: "";
         width: 4.8rem;
@@ -2553,6 +2649,7 @@ body.loaded .preloader {
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%)
     }
+
     .growth .row>div:nth-child(n+2) {
         margin-top: 5rem
     }
@@ -2665,15 +2762,18 @@ body.loaded .preloader {
     .step__wrapper {
         padding: 5rem 0
     }
+
     .step__box .image img {
         -webkit-transform: scale(0.9);
         transform: scale(0.9);
         width: auto;
         margin: 0 auto
     }
+
     .step__box .content {
         margin: 0
     }
+
     .step__box .content .paragraph {
         width: 60%;
         margin: 0 auto
@@ -2844,6 +2944,7 @@ body.loaded .preloader {
     .clients-sec .testimonial__wrapper .client .testimonial {
         width: 55%
     }
+
     .clients-sec .testimonial__wrapper .client .testimonial p {
         font-size: 2.4rem
     }
@@ -2853,25 +2954,31 @@ body.loaded .preloader {
     .clients-sec {
         padding: 5rem 0
     }
+
     .clients-sec .testimonial__wrapper .client .testimonial {
         width: 100%;
         height: 40rem;
         top: 24.8rem
     }
+
     .clients-sec .testimonial__wrapper .client:nth-child(n+3) {
         margin-top: 49.8rem
     }
+
     .clients-sec .clients {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap
     }
+
     .clients-sec .clients-slider {
         width: 100%;
         margin-top: 5rem
     }
+
     .clients-sec .clients-slide {
         text-align: center
     }
+
     .clients-sec .clients__info {
         width: 100%;
         text-align: center
@@ -3015,6 +3122,7 @@ body.loaded .preloader {
     .questions-img {
         text-align: center
     }
+
     .questions .section-heading {
         width: 100%
     }
@@ -3024,12 +3132,14 @@ body.loaded .preloader {
     .questions-img {
         width: 100%
     }
+
     .questions-img::before {
         -webkit-transform: scale(0.8) translate(-50%, 0);
         transform: scale(0.8) translate(-50%, 0);
         top: 0;
         left: 40%
     }
+
     .questions #accordion {
         padding: 0 2rem;
         margin-top: 5rem
@@ -3041,9 +3151,11 @@ body.loaded .preloader {
         width: calc(100% - 5rem);
         padding: 5rem 2rem
     }
+
     .questions-img {
         width: 100%
     }
+
     .questions-img::before {
         -webkit-transform: scale(0.6) translate(-50%, 0);
         transform: scale(0.6) translate(-50%, 0);
@@ -3056,26 +3168,31 @@ body.loaded .preloader {
     .questions #accordion {
         padding: 0 1rem
     }
+
     .questions .card-header {
         width: 100%;
         font-size: 1.2rem
     }
+
     .questions .card-header h5 {
         width: 100%;
         font-size: 1.2rem
     }
+
     .questions .card-header h5 button {
         width: 100%;
         text-align: left;
         white-space: normal;
         font-size: 1.8rem !important
     }
+
     .questions-img img {
         width: 50%;
         height: 50%;
         -o-object-fit: cover;
         object-fit: cover
     }
+
     .questions-img::before {
         -webkit-transform: scale(1) translate(-50%, 0);
         transform: scale(1) translate(-50%, 0);
@@ -3314,9 +3431,11 @@ body.loaded .preloader {
         width: 75%;
         margin-bottom: 5rem
     }
+
     .pricing__wrapper {
         padding: 5rem 2rem
     }
+
     .pricing .row>div:nth-child(n+2) {
         margin-top: 5rem
     }
@@ -3407,6 +3526,7 @@ body.loaded .preloader {
     .screenshot__wrapper {
         width: calc(100% - 5rem)
     }
+
     .screenshot__info {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -3416,12 +3536,15 @@ body.loaded .preloader {
         -ms-flex-align: center;
         align-items: center
     }
+
     .screenshot-slide {
         text-align: center
     }
+
     .screenshot-slide a {
         margin: 0 auto
     }
+
     .screenshot-slider {
         margin-left: 0;
         width: 100%;
@@ -3562,6 +3685,7 @@ body.loaded .preloader {
     .newsletter {
         margin-top: 5rem
     }
+
     .newsletter__wrapper {
         width: calc(100% - 5rem);
         background-color: #fef2f6;
@@ -3569,23 +3693,28 @@ body.loaded .preloader {
         padding-top: 10rem;
         overflow: hidden
     }
+
     .newsletter__wrapper::before {
         display: none
     }
+
     .newsletter__img {
         text-align: center;
         margin-top: 2rem
     }
+
     .newsletter__img::before {
         right: initial;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%)
     }
+
     .newsletter__info {
         position: static;
         bottom: initial
     }
+
     .newsletter__info--field {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -3595,6 +3724,7 @@ body.loaded .preloader {
         -ms-flex-align: center;
         align-items: center
     }
+
     .newsletter__info button {
         margin: 2rem auto 0 auto;
         width: 33rem
@@ -3677,13 +3807,16 @@ body.loaded .preloader {
     .newsletter-2 .section-heading {
         width: 80%
     }
+
     .newsletter-2 .newsletter__wrapper {
         padding: 5rem 2rem 0 2rem;
         overflow: hidden
     }
+
     .newsletter-2 .newsletter__wrapper::before {
         height: 100%
     }
+
     .newsletter-2 .newsletter__img {
         position: static;
         right: initial;
@@ -3779,30 +3912,38 @@ body.loaded .preloader {
         -ms-flex-direction: column;
         flex-direction: column
     }
+
     .footer__wrapper {
         width: calc(100% - 5rem);
         text-align: center;
         padding: 10rem 0 5rem 0
     }
+
     .footer__info--content .paragraph {
         margin: 0 auto 3rem auto
     }
+
     .footer__list {
         margin-top: 3rem
     }
+
     .footer__list ul li:first-child {
         margin-bottom: 3rem
     }
+
     .footer .download-buttons {
         margin-right: 0
     }
+
     .footer .download-buttons h5 {
         margin-bottom: 3rem
     }
+
     .footer .download-buttons a {
         margin: 0 auto;
         text-align: left
     }
+
     .footer__copy {
         width: 100%;
         text-align: center;
